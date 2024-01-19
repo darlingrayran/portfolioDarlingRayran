@@ -11,34 +11,36 @@
   .header_div {
     width: 100px;
     height: 100vh;
-    background-color: rgba(0, 0, 255, 0.715); 
+    background-color: rgb(13, 154, 144); 
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-left: 2px;
+    border-radius: 0 35px 35px 0; 
+  }
+  .picture{
+    width: 70px;
+    height: auto;
+    padding: 10px;
   }
   
   .header_div nav a {
-    display: block; 
+    display: block;
     color: white;
     text-decoration: none;
-    margin-bottom: 10px;
     padding: 5px;
-    margin-right: 10px;
-    padding: 2px;
     font-size: 15px;
     text-align: center;
   }
 
   .header_div nav a:hover {
-    color: yellow;
-    background-color: aqua;
+    color: greenyellow;
+    background-color: rgb(29, 137, 244);
     border-radius: 10px;
 }
-  
+
   .header_banner {
     flex-grow: 1; 
-    background-image: url('./src/images/texturapapel.png');
+    background-image: url('./src/images/fondo.png');
     background-size: cover;
     background-position: center;  
     display: flex;
@@ -56,7 +58,7 @@
 
   .banner_title h1{
     text-align: center;
-    color:orangered;
+    color:darkcyan;
     font-size: 30px;
     padding: 10px;
 }
@@ -86,14 +88,14 @@ ul li {
     padding: 10px 20px;
     text-decoration: none;
     color: #fff;
-    background-color: rgba(0, 0, 255, 0.715);
+    background-color: rgb(13, 154, 144);
     border-radius: 5px;
     font-size: 15px;
 }
 
 .cv:hover{
     background-color: rgb(29, 137, 244);
-    color: orangered;
+    color: greenyellow;
 }
 
  /*burbujas*/
@@ -187,3 +189,189 @@ ul li {
     }
 
  }
+
+ /* segunda pagina */
+
+
+.about{
+  background:linear-gradient(to bottom, white,  rgb(13, 154, 144));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about_title{
+  color: darkcyan;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.about h3{
+  color: white;
+  background: darkcyan;
+  width: 200px;
+  font-size: 15px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.family{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  background-color: transparent;
+  border-radius: 40%;
+}
+
+.about p{
+  width: 290px;
+  text-align: justify;
+  font-size: 15px;
+}
+
+.about ul li {
+  list-style: none;
+  display: flex;
+  font-size: 25px;
+  margin: 10px;
+}
+
+.about ul li i {
+  color: rgb(2, 2, 2); 
+}
+
+.about ul li i:hover {
+  color: white; 
+}
+
+/*  projects   */
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.subtitle {
+  color: darkcyan;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#loading {
+  width: 250px;
+  height: 110px;
+  background: url('https://media.giphy.com/media/RHEqKwRZDwFKE/giphy.gif') center/cover no-repeat;
+}
+
+/*certificaciones*/
+
+.certification {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background:linear-gradient(to bottom, white,  rgb(13, 154, 144));
+}
+
+.diplomas {
+  display: grid;
+  grid-template-columns: repeat(1, 4fr);
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.diploma {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* contacto */
+
+.contact-section {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./src/images/fondo.png');
+  margin: 5px;
+}
+
+.contact-section h2{
+  display:flex;
+  justify-content: center;
+  color:darkcyan;
+  font-size: 30px;
+  margin: 5px;
+}
+
+.contact-content p{
+  font-size: 18px;
+  text-align: justify;
+}
+
+.contact-content ul li i{
+  color:darkcyan;
+  font-size: 20px;
+  margin: 2px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: darkcyan;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* footer*/
+
+.footer{
+  background-color: darkcyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.logo{
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 50%;
+}
