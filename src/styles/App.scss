@@ -1,62 +1,70 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-.header{
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(to right,#b2ebf2, #69e8f9);
-    position: relative;
-}
-
-.header_div{
-    width: 100%;
-    position: absolute;
-    padding:20px;
+.header {
     display: flex;
-    justify-content: right;
+    overflow-x: hidden;
+  }
+  
+  .header_div {
+    width: 100px;
+    height: 100vh;
+    background-color: rgba(0, 0, 255, 0.715); 
+    flex-direction: column;
     align-items: center;
-}
-
-.header nav a{
-    color: darkblue;
+    justify-content: center;
+    padding-left: 2px;
+  }
+  
+  .header_div nav a {
+    display: block; 
+    color: white;
     text-decoration: none;
+    margin-bottom: 10px;
+    padding: 5px;
     margin-right: 10px;
     padding: 2px;
-    font-size: 25px;
-}
+    font-size: 15px;
+    text-align: center;
+  }
 
-.header nav a:hover{
-    color: blue;
+  .header_div nav a:hover {
+    color: yellow;
     background-color: aqua;
     border-radius: 10px;
 }
-
-.banner{
-   margin: 0;
-   padding: 0;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   height: 100vh;
-}
-
-.banner_title h1{
+  
+  .header_banner {
+    flex-grow: 1; 
+    background-image: url('./src/images/texturapapel.png');
+    background-size: cover;
+    background-position: center;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .banner {
     text-align: center;
-    color:rgb(7, 7, 195);
-    font-size: 60px;
-    font-weight: 800;
+  }
+  
+  .banner_title h1, .banner_title h2 {
+    margin: 0;
+  }
+
+  .banner_title h1{
+    text-align: center;
+    color:orangered;
+    font-size: 30px;
     padding: 10px;
 }
 
 .banner_title h2{
     text-align: center;
-    color:rgb(45, 45, 45);
-    font-size: 80px;
-    font-weight: 800;
+    color:black;
+    font-size: 15px;
     padding: 10px;
 }
 
@@ -64,7 +72,7 @@ ul {
     list-style: none;
     padding: 0;
     display: flex;
-    font-size: 40px;
+    font-size: 15px;
     color:rgb(45, 45, 45);
 }
 
@@ -72,28 +80,29 @@ ul li {
     margin: 0 10px;
 }
 
-.contact {
+.cv {
     display: inline-block;
-    margin-top: 80px;
+    margin-top: 40px;
     padding: 10px 20px;
     text-decoration: none;
     color: #fff;
-    background-color: #0b515a; /* Ajusta el color de fondo según tu preferencia */
+    background-color: rgba(0, 0, 255, 0.715);
     border-radius: 5px;
-    font-size: 25px;
+    font-size: 15px;
 }
 
-.contact:hover{
-    background-color: rgb(28, 53, 213);
-    color: rgb(0, 234, 255);
+.cv:hover{
+    background-color: rgb(29, 137, 244);
+    color: orangered;
 }
 
  /*burbujas*/
+
  .burbuja{
     border-radius: 50%;
     background-color: rgb(29, 137, 219);
     opacity: .3;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     animation: burbujas 3s linear infinite reverse ;
 
@@ -158,7 +167,7 @@ ul li {
  .burbuja:nth-child(8){
     width: 60px;
     height: 60px;
-    left: 95%;
+    left: 90%;
     animation-duration: 3s;
     animation-delay: 2s;
  }
@@ -178,12 +187,3 @@ ul li {
     }
 
  }
-
-
-/*footer*/
-
- .footer img{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
