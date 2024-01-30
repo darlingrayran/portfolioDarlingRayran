@@ -1,6 +1,9 @@
 import React from 'react'
 import "../../styles/header/subMenu.scss"
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faTwitter, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+
 
 function SubMenu() {
   return (
@@ -18,13 +21,16 @@ function SubMenu() {
               <Link to="/contact">Contacto</Link>
             </nav>
             <label htmlFor="btn-menu"> X </label>
+            
+            <div className='icons'>
+              <nav className='icons_red'>
+                  <a href="https://github.com/darlingrayran" target="_blank"><FontAwesomeIcon icon={faGithub} /> </a>
+                  <a href="https://twitter.com/darling_rayran" target="_blank"><FontAwesomeIcon icon={faTwitter}/></a>
+                  <a href="https://www.linkedin.com/feed/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /> </a>
+                  <a href="https://wa.me/+34670845172" target="_blank"><FontAwesomeIcon icon={faWhatsapp} /></a>
+              </nav>
+            </div>
         </div>
-        <nav className="menu">
-                    <a href="https://github.com/darlingrayran" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://twitter.com/darling_rayran" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://wa.me/+34670845172" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        </nav>
         </div>
     </div>
   )
