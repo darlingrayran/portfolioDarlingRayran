@@ -1,0 +1,51 @@
+ /* titulo header*/
+
+ .header_banner {
+    background-color: #e6fbe3;
+    background-size: cover;
+    background-position: center;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+    
+  .banner_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .banner_title h1{
+    text-align: center;
+    color:#5c5c5c;
+    font-size: 40px;
+    padding: 10px;
+  }
+  
+  .banner_title h2{
+    text-align: center;
+    color:#0a490a;
+    font-size: 25px;
+    padding: 10px;
+  }
+  
+  .cv {
+    cursor: pointer;
+    margin-top: 40px;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    color: #916400;
+    background-color: #b4c8b1;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 110px;
+  }
+  
+  .cv:hover{
+      background-color: #0a490a;
+      color: yellow;
+  }
