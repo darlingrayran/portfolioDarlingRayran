@@ -1,7 +1,7 @@
 import React from 'react'
 import "../../styles/body/projects.scss"
 
-function projects() {
+function Projects() {
   return (
     <div>
     <section className='projects'>
@@ -12,4 +12,4 @@ function projects() {
   )
 }
 
-export default projects;
+export default Projects;

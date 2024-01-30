@@ -1,11 +1,14 @@
 import React from 'react'
 import "../../styles/body/certifications.scss"
 
-function certifications() {
+function Certifications() {
+
+  let subTitleC = "Certificaciones"
+
   return (
     <div>
     <section className='certification'>
-        <h2 className='subtitle'>Certificaciones</h2>
+        <h2 className='subtitle'> {subTitleC} </h2>
         <div className="diplomas">
         <img className="diploma" src="./src/images/diploma1.png" alt="Certificado Estudio"></img>
         <img className="diploma" src="./src/images/diploma2.png" alt="Certificado Estudio"></img>
@@ -17,4 +20,4 @@ function certifications() {
   )
 }
 
-export default certifications;
+export default Certifications;

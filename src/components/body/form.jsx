@@ -1,7 +1,13 @@
 import React from 'react'
 import '../../styles/body/form.scss';
 
-function form() {
+function Form() {
+
+  let location = "Valencia, Spain"
+  let email = "darlingrayran@hotmail.com"
+  let phone = "(+34)670845172"
+
+
   return (
     <div>
     <section className='contact-section'>
@@ -12,9 +18,9 @@ function form() {
             <p>Estoy en la búsqueda de nuevas oportunidades que me permitan seguir creciendo profesionalmente. ¡Estoy completamente dispuesta, entusiasmada y con ideas nuevas que aportarán significativamente en su empresa!</p>
             <p>El momento es ahora!</p>
             <ul>
-            <li><i className="fas fa-map-marker-alt"></i> Valencia, Spain</li>
-            <li><i className="far fa-envelope"></i> darlingrayran@hotmail.com</li>
-            <li><i className="fas fa-phone-alt"></i> (+34)670845172</li>
+            <li><i className="fas fa-map-marker-alt"></i> {location} </li>
+            <li><i className="far fa-envelope"></i> {email} </li>
+            <li><i className="fas fa-phone-alt"></i> {phone} </li>
             </ul>
             <p> Tambien puedes rellenar el formulario y me podre en contacto en la mayor brevedad posible </p>
         </div>
@@ -38,4 +44,4 @@ function form() {
   )
 }
 
-export default form;
+export default Form;

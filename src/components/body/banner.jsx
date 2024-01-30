@@ -1,18 +1,29 @@
-import React from 'react'
 import "../../styles/body/banner.scss"
+import React, {useState} from 'react'
 
-function banner() {
+function Banner() {
+
+  const [message, setMessage] = useState('');
+  let name = "Darling Rayran Castro"
+  let job = " Full Stack Developer & Environmental Engineer"
+  let btn = "Download CV"
+
+  const handleDownloadClick = () => {
+    setMessage("Successful download CV");
+  };
+
   return (
     <div>
         <div className='header_banner'>
         <section className='banner_title'>
-            <h1> Darling Rayran Castro </h1>
-            <h2> Full Stack Developer || Environmental Engineer </h2>
-            <a href="#" className='cv'> Download CV </a>
+            <h1> {name} </h1>
+            <h2> {job} </h2>
+            <a href="/CV_DarlingRayranCastro.pdf" className='cv' download onClick={handleDownloadClick}> {btn} </a>
+            {message && <p className="message"> {message}</p>}
         </section>
       </div>
     </div>
   )
 }
 
-export default banner;
+export default Banner;

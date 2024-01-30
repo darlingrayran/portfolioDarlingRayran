@@ -1,7 +1,7 @@
 import React from 'react'
 import "../../styles/body/animation.scss"
 
-function animation() {
+function Animation() {
   return (
     <div>
         <div className='burbujas'>
@@ -18,4 +18,4 @@ function animation() {
   )
 }
 
-export default animation;
+export default Animation;

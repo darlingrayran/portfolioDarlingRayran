@@ -1,7 +1,8 @@
 import React from 'react'
 import "../../styles/header/subMenu.scss"
+import { Link } from 'react-router-dom';
 
-function subMenu() {
+function SubMenu() {
   return (
     <div>
         <div className="capa"></div>
@@ -10,11 +11,11 @@ function subMenu() {
         <div className="container-menu">
         <div className="cont-menu">
             <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Sobre mí</a>
-            <a href="#">Proyectos</a>
-            <a href="#">Certificaciones</a>
-            <a href="#">Contacto</a>
+              <Link to="/banner">Inicio</Link>
+              <Link to="/about">Sobre mí</Link>
+              <Link to="/projects">Proyectos</Link>
+              <Link to="/certifications">Certificaciones</Link>
+              <Link to="/contact">Contacto</Link>
             </nav>
             <label htmlFor="btn-menu"> X </label>
         </div>
@@ -23,4 +24,4 @@ function subMenu() {
   )
 }
 
-export default subMenu;
+export default SubMenu;
