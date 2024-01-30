@@ -1,6 +1,6 @@
 .header{
     width: 100%;
-    height: 100px;
+    height: 40px;
     position: fixed;
     top: 0;
     left: 0;
@@ -14,9 +14,13 @@
     width: 90%;
     max-width: 1200px;
     margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    height: 100%;
+
   }
   .container .btn-menu{
-    float: left;
     line-height:100px;
   }
   .container .btn-menu label{
@@ -26,21 +30,7 @@
   }
   
   .container .menu{
-    float: right;
+    float: left;
     line-height: 100px;
   }
-  .container .menu a{
-    display: inline-block;
-    padding: 2px;
-    line-height: normal;
-    text-decoration: none;
-    color: #0a490a;
-    transition: all 0.3s ease;
-    border-bottom: 2px solid transparent;
-    font-size: 15px;
-  }
-  .container .menu a:hover{
-    border-bottom: 2px solid #FFC107;
-    padding-bottom: 2px;
-    color: orange;
-  }
+  
