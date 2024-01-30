@@ -5,7 +5,7 @@ function Banner() {
 
   const [message, setMessage] = useState('');
   let name = "Darling Rayran Castro"
-  let job = " Full Stack Developer & Environmental Engineer"
+  let job = " Full Stack Developer Junior & Environmental Engineer"
   let btn = "Download CV"
 
   const handleDownloadClick = () => {

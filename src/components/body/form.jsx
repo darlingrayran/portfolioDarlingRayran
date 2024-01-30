@@ -7,6 +7,9 @@ function Form() {
   let email = "darlingrayran@hotmail.com"
   let phone = "(+34)670845172"
 
+  
+
+
 
   return (
     <div>
@@ -22,20 +25,36 @@ function Form() {
             <li><i className="far fa-envelope"></i> {email} </li>
             <li><i className="fas fa-phone-alt"></i> {phone} </li>
             </ul>
-            <p> Tambien puedes rellenar el formulario y me podre en contacto en la mayor brevedad posible </p>
+            <p> Dejame tus datos y me podre en contacto en la mayor brevedad posible. </p>
         </div>
         <form className='contact-form' action='#' method='post'>
             <label htmlFor="name"> Nombre: </label>
-            <input type="text" id="name" name="name" required />
+            <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            required />
 
             <label htmlFor="phone"> Telefono </label>
-            <input type="text" id="phone" name="phone" required />
+            <input 
+            type="text" 
+            id="phone" 
+            name="phone" 
+            required />
 
             <label htmlFor="email"> Correo electrónico: </label>
-            <input type="email" id="email" name="email" required />
+            <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            required />
 
             <label htmlFor="message"> Déjame un mensaje: </label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+            <textarea 
+            id="message" 
+            name="message" 
+            rows="4" 
+            required></textarea>
 
             <button type="submit"> Enviar </button>
         </form>

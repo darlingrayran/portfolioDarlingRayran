@@ -40,21 +40,15 @@
     text-decoration: none;
     padding: 10px;
     color: white;
-    border-left: 3px solid transparent;
+    border-left: 5px solid transparent;
     transition: all 400ms ease;
   }
   .cont-menu nav a:hover{
-    border-left: 3px solid yellow;
+    cursor: pointer;
+    border-left: 5px solid yellow;
     color: yellow;
   }
-  .cont-menu label{
-    position: absolute;
-    right: 5px;
-    top: 10px;
-    color: rgb(240, 139, 7);
-    cursor: pointer;
-    font-size: 18px;
-  }
+
 
   /* iconos*/ 
 
@@ -68,5 +62,8 @@
     color: white; 
     font-size: 18px; 
   }
+
+
+
 
   

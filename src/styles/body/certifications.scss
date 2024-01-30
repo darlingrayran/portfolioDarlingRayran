@@ -10,16 +10,11 @@
     background-color:#e6fbe3;
   }
   
-  .diplomas {
-    display: grid;
-    grid-template-columns: repeat(1, 4fr);
-    gap: 12px;
-  }
   
-  .diploma {
-    width: 180px;
-    height: 110px;
+  .diploma{
+    width: 250px;
+    height: 150px;
     object-fit: cover;
-    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
+
