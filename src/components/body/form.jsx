@@ -6,10 +6,7 @@ function Form() {
   let location = "Valencia, Spain"
   let email = "darlingrayran@hotmail.com"
   let phone = "(+34)670845172"
-
   
-
-
 
   return (
     <div>
