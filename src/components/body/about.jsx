@@ -9,7 +9,7 @@ function About() {
   let textTwo = "En este viaje, descubro que el amor por la familia no solo enriquece mi vida personal, sino que también aporta una perspectiva valiosa que potencia mi crecimiento y éxito profesional."
   let textThree = "Esta combinación única de habilidades técnicas y valores familiares me impulsa a alcanzar logros excepcionales y a dejar una huella positiva en todo lo que me proponga."
 
-  const images = ['./src/images/darlingrayran.png', './src/images/family.png','./src/images/fotoFamilia.png','./src/images/bruce.png'];
+  const images = ['./assets/images/darlingrayran.png', './src/images/family.png','./src/images/fotoFamilia.png','./src/images/bruce.png'];
   const [currentImage, setCurrentImage] = useState(images[0]);
 
   useEffect(() => {
