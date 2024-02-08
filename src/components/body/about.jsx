@@ -4,12 +4,12 @@ import "../../styles/body/about.scss"
 function About() {
 
   let titleOne = " Sobre mí"
-  let subTitleOne = "Resolutiva, Creativa, Adaptación al cambio"
+  let subTitleOne = "Resolutiva, Proactiva, Resiliente , Trabajo en equipo"
   let textOne = "Me Destaco por mi capacidad para ofrecer soluciones creativas y efectivas, marcando una diferencia palpable en cualquier entorno profesional."
   let textTwo = "En este viaje, descubro que el amor por la familia no solo enriquece mi vida personal, sino que también aporta una perspectiva valiosa que potencia mi crecimiento y éxito profesional."
   let textThree = "Esta combinación única de habilidades técnicas y valores familiares me impulsa a alcanzar logros excepcionales y a dejar una huella positiva en todo lo que me proponga."
 
-  const images = ['./src/images/darlingrayran.png', './src/images/family.png','./src/images/fotoBruceM.jpeg','./src/images/fotoFamilia.png','./src/images/fotobruce.jpeg'];
+  const images = ['./src/images/darlingrayran.png', './src/images/family.png','./src/images/fotoFamilia.png','./src/images/bruce.png'];
   const [currentImage, setCurrentImage] = useState(images[0]);
 
   useEffect(() => {
