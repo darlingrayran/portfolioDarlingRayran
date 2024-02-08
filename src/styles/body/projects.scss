@@ -5,20 +5,100 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: auto;
     margin: 0;
     background:linear-gradient(to bottom, #2a9235,  #e6fbe3);
   }
   
   .subtitle {
     color: #333333;
+    padding-top: 20px;
     font-size: 30px;
     margin-bottom: 20px;
   }
   
-  #loading {
-    width: 250px;
-    height: 110px;
-    background: url('https://media.giphy.com/media/RHEqKwRZDwFKE/giphy.gif') center/cover no-repeat;
-    
+  .text{
+    font-size: 14px;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
   }
+
+  .projectAdams{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .projectDetective{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .names{
+    padding: 15px;
+  }
+
+  .landing{
+    width: 200px;
+    height: 150px;
+  }
+
+  .loader-container {
+    position: relative;
+    width: 50%; 
+    background-color: #f3f3f3;
+    height: 30px; 
+    border-radius: 15px; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 10px;
+  }
+  
+  .loader-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #3498db; 
+    width: 0%; 
+    border-radius: 15px; 
+    animation: loadingAnimation 2s ease-in-out infinite; 
+  }
+  
+  .loading-text {
+    position: absolute;
+    color: #000;
+    font-size: 16px; 
+  }
+  
+  @keyframes loadingAnimation {
+    0%, 100% {
+      width: 0%; 
+    }
+    50% {
+      width: 100%;
+    }
+  }
+  
+  .button-link {
+    display: inline-block;
+    padding: 10px 20px; 
+    background-color: #3498db;
+    color: white; 
+    text-decoration: none; 
+    border-radius: 5px;
+    font-size: 16px; 
+    transition: background-color 0.3s;
+    margin: 10px; 
+  }
+  
+  .button-link:hover {
+    background-color: #2878a9;
+  }
+  
