@@ -9,7 +9,7 @@ function Form() {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
   
-    let location = "Valencia, Spain";
+    let location = "Gandia, Valencia, Spain";
     let contactEmail = "darlingrayran@hotmail.com";
     let contactPhone = "(+34)670845172";
   
@@ -60,9 +60,9 @@ function Form() {
             <p>Estoy en la búsqueda de nuevas oportunidades que me permitan seguir creciendo profesionalmente. ¡Estoy completamente dispuesta, entusiasmada y con ideas nuevas que aportarán significativamente en su empresa!</p>
             <p>El momento es ahora!</p>
             <ul>
-            <li><i className="fas fa-map-marker-alt"></i> {location} </li>
-            <li><i className="far fa-envelope"></i> {contactEmail} </li>
-            <li><i className="fas fa-phone-alt"></i> {contactPhone} </li>
+            <li className='box'><i className="fas fa-map-marker-alt"></i> {location} </li>
+            <li className='box'><i className="far fa-envelope"></i> {contactEmail} </li>
+            <li className='box'><i className="fas fa-phone-alt"></i> {contactPhone} </li>
             </ul>
             <p> Dejame tus datos y me podre en contacto en la mayor brevedad posible. </p>
         </div>

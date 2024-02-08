@@ -7,21 +7,36 @@
     justify-content: center;
     height: auto;
     margin: 0;
-    background:linear-gradient(to bottom, #2a9235,  #e6fbe3);
+    background:#f5f5f5;
+    @media all and (min-width: 768px){
+      height: auto;
+    }
   }
   
   .subtitle {
-    color: #333333;
+    color: #5c5c5c;
     padding-top: 20px;
     font-size: 30px;
     margin-bottom: 20px;
+    @media all and (min-width: 768px){
+      font-size: 40px;
+    }
   }
   
   .text{
     font-size: 14px;
+    color: #333333;
     text-align: justify;
     padding-left: 20px;
     padding-right: 20px;
+    @media all and (min-width: 768px){
+      font-size: 24px;
+      width: 600px;
+    }
+    @media all and (min-width: 1200px){
+      font-size: 24px;
+      width: 900px;
+    }
   }
 
   .projectAdams{
@@ -40,17 +55,28 @@
 
   .names{
     padding: 15px;
+    font-size: 20px;
+    color: #5c5c5c;
+    @media all and (min-width: 768px){
+      font-size: 30px;
+    }
   }
 
   .landing{
     width: 220px;
     height: 150px;
+    border: 3px solid #5c5c5c;
+    @media all and (min-width: 768px){
+      width: 520px;
+      height: 250px;
+    }
+    
   }
 
   .loader-container {
     position: relative;
     width: 50%; 
-    background-color: #f3f3f3;
+    background-color: #dedeff;
     height: 30px; 
     border-radius: 15px; 
     overflow: hidden;
@@ -58,7 +84,11 @@
     justify-content: center; 
     align-items: center; 
     margin: 10px;
-    margin-bottom: 50px; 
+    margin-bottom: 50px;
+    border: 3px solid #757de8;
+    @media all and (min-width: 768px){
+      width: 70%;
+    } 
   }
   
   .loader-bar {
@@ -66,7 +96,7 @@
     top: 0;
     left: 0;
     height: 100%;
-    background-color: #3498db; 
+    background-color: #757de8; 
     width: 0%; 
     border-radius: 15px; 
     animation: loadingAnimation 2s ease-in-out infinite;
@@ -75,7 +105,10 @@
   .loading-text {
     position: absolute;
     color: #000;
-    font-size: 16px; 
+    font-size: 16px;
+    @media all and (min-width: 768px){
+      font-size: 25px;
+    } 
   }
   
   @keyframes loadingAnimation {
@@ -90,16 +123,59 @@
   .button-link {
     display: inline-block;
     padding: 10px 20px; 
-    background-color: #3498db;
+    background-color: #757de8;
     color: white; 
     text-decoration: none; 
     border-radius: 5px;
     font-size: 16px; 
     transition: background-color 0.3s;
-    margin: 10px; 
+    margin: 10px;
+    @media all and (min-width: 768px){
+      font-size: 20px;
+    } 
   }
   
   .button-link:hover {
-    background-color: #d9ed3c;
+    background-color: #3F51B5;
   }
+  
+  .adams{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+      margin: 0;
+      background:#f5f5f5;
+      @media all and (min-width: 768px){
+        height: auto;
+      }
+    }
+
+  .pro{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+      margin: 0;
+      background:#f5f5f5;
+      @media all and (min-width: 768px){
+        height: auto;
+      }
+  }
+
+  .other{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin: 0;
+    background:#f5f5f5;
+    @media all and (min-width: 768px){
+      height: auto;
+    }
+  }
+  
   

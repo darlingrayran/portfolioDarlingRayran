@@ -15,6 +15,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @media all and (min-width: 768px){
+      font-size: 45px;
+      padding: 20px;
+    }
   }
   
   .about h3{
@@ -25,6 +29,11 @@
     justify-content: space-around;
     align-items: center;
     padding-top: 5px;
+    @media all and (min-width: 768px){
+      font-size: 25px;
+      width: 600px;
+      padding: 10px;
+    }
   }
   
   .family{
@@ -33,11 +42,28 @@
     margin: 20px;
     background-color: transparent;
     border-radius: 40%;
+    @media all and (min-width: 768px){
+      width: 300px;
+      height: 300px;
+    }
+    @media all and (min-width: 1200px){
+      width: 250px;
+      height: 250px;
+    }
   }
   
   .about p{
     width: 290px;
     text-align: justify;
     font-size: 15px;
+    @media all and (min-width: 768px){
+      padding-top: 20px;
+      font-size: 25px;
+      width: 600px;
+    }
+    @media all and (min-width: 1200px){
+      font-size: 25px;
+      width: 1000px;
+    }
   }
   

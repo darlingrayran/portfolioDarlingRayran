@@ -11,23 +11,28 @@
     margin-top: 100px; 
   }
   .container{
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
-    margin: auto;
     display: flex;
     justify-content: flex-end;
     align-items: center; 
     height: 100%;
-    margin-top: 12px;
+    margin-top: 10px;
+    @media all and (min-width: 768px){
+      margin-top: 20px;
+    }
 
   }
   .container .btn-menu{
     line-height:100px;
   }
   .container .btn-menu label{
-    color: #5c5c5c;
+    color: #060606;
     font-size: 35px;
     cursor: pointer;
+    @media all and (min-width: 768px){
+      font-size: 40px;
+    }
   }
   
   .container .menu{

@@ -22,13 +22,13 @@ function Certifications() {
       <section className='certification'>
           <h2 className='subtitle'>{subTitleC}</h2>
           <div className="diploma-container">
-            <button onClick={previousDiploma}><i class="fa-regular fa-hand-point-left"></i></button>
+            <button onClick={previousDiploma} className='btnStyle'><i class="fa-regular fa-hand-point-left"></i></button>
             <img 
               className="diploma" 
               src={diplomas[currentDiplomaIndex]} 
               alt="Certificado Estudio"
             />
-            <button onClick={nextDiploma}><i class="fa-regular fa-hand-point-right"></i></button>
+            <button onClick={nextDiploma} className='btnStyle'><i class="fa-regular fa-hand-point-right"></i></button>
           </div>
       </section>
     </div>

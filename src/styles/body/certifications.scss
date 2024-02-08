@@ -7,14 +7,51 @@
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color:#e6fbe3;
+    background-color:#f5f5f5;
+
   }
   
+  .subtitle{
+    color:#5c5c5c;
+    font-size: 30px;
+    @media all and (min-width: 768px){
+      font-size: 45px;
+    }
+  }
   
   .diploma{
     width: 250px;
-    height: 150px;
+    height: 200px;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    @media all and (min-width: 768px){
+      width: 600px;
+      height: 450px;
+    }
+    @media all and (min-width: 1200px){
+      width: 900px;
+      height: 550px;
+    }
+  }
+
+  .btnStyle{
+    background-color: #757de8;
+    color: white;
+    font-size: 15px;
+    margin: 5px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    @media all and (min-width: 768px){
+      font-size: 30px;
+      margin: 10px;
+    }
+  }
+  
+  .btnStyle:hover {
+    background-color: #3F51B5;
+    color: #ffadad;
   }
 
