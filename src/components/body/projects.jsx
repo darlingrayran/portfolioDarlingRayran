@@ -18,7 +18,7 @@ function Projects() {
         <div className="projectAdams">
           <h3 className='names'> Create Cards </h3>
           <img className='landing' src={landingAdams} alt='Landing'></img>
-          <a href="#" class="button-link" target="_blank" rel="noopener noreferrer"> Ver proyecto completo</a>
+          <a href="https://github.com/darlingrayran/createCards-Adams" class="button-link" target="_blank" rel="noopener noreferrer"> Ver proyecto completo</a>
         </div>
     </section>
     <section className='pro'>
