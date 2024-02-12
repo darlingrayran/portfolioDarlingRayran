@@ -5,8 +5,8 @@ import "../../styles/body/projects.scss"
 
 function Projects() {
 
-  const landingAdams = ['./src/images/adamsCards.png'];
-  const landingDet = ['./src/images/detectiveCards.png'];
+  const landingAdams = ['./src/images/adamsCards.PNG'];
+  const landingDet = ['./src/images/detectiveCards.PNG'];
 
   return (
     <div>

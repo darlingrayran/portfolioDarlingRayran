@@ -1,15 +1,19 @@
 import React, {useState , useEffect} from 'react'
 import "../../styles/body/about.scss"
+import fotoDarling from "../../images/darlingrayran.png";
+import fotoFamilia from "../../images/family.png";
+import fotoFam from "../../images/fotoFamilia.png";
+import bruce from "../../images/bruce.png";
 
 function About() {
 
   let titleOne = " Sobre mí"
-  let subTitleOne = "Resolutiva, Proactiva, Resiliente , Trabajo en equipo"
+  let subTitleOne = "Resolutiva, Proactiva y Resiliente"
   let textOne = "Me Destaco por mi capacidad para ofrecer soluciones creativas y efectivas, marcando una diferencia palpable en cualquier entorno profesional."
   let textTwo = "En este viaje, descubro que el amor por la familia no solo enriquece mi vida personal, sino que también aporta una perspectiva valiosa que potencia mi crecimiento y éxito profesional."
   let textThree = "Esta combinación única de habilidades técnicas y valores familiares me impulsa a alcanzar logros excepcionales y a dejar una huella positiva en todo lo que me proponga."
 
-  const images = ['./src/images/darlingrayran.png', './src/images/family.png','./src/images/fotoFamilia.png','./src/images/bruce.png'];
+  const images = [{fotoDarling},{fotoFamilia},{fotoFam},{bruce}];
   const [currentImage, setCurrentImage] = useState(images[0]);
 
   useEffect(() => {
