@@ -13,7 +13,7 @@ function About() {
   let textTwo = "En este viaje, descubro que el amor por la familia no solo enriquece mi vida personal, sino que también aporta una perspectiva valiosa que potencia mi crecimiento y éxito profesional."
   let textThree = "Esta combinación única de habilidades técnicas y valores familiares me impulsa a alcanzar logros excepcionales y a dejar una huella positiva en todo lo que me proponga."
 
-  const images = [{fotoDarling},{fotoFamilia},{fotoFam},{bruce}];
+  const images = [fotoDarling, fotoFamilia, fotoFam, bruce];
   const [currentImage, setCurrentImage] = useState(images[0]);
 
   useEffect(() => {
@@ -34,7 +34,7 @@ function About() {
     <section className='about'>
         <h2 className='about_title'> {titleOne} </h2>
         <h3> {subTitleOne} </h3>
-        <img className='family' src={fotoDarling} alt='Fotos'></img>
+        <img className='family' src={currentImage} alt='Fotos'></img>
         <p> {textOne} </p>
         <p> {textTwo} </p>
         <p> {textThree} </p>
