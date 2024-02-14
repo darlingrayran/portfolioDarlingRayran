@@ -18,14 +18,14 @@ function Projects() {
         <div className="projectAdams">
           <h3 className='names'> Create Cards </h3>
           <img className='landing' src={landingAdams} alt='Landing'></img>
-          <a href="https://github.com/darlingrayran/createCards-Adams" class="button-link" target="_blank" rel="noopener noreferrer"> Ver proyecto completo</a>
+          <a href="https://github.com/darlingrayran/createCards-Adams" class="button-link" target="_blank" rel="noopener noreferrer"> Descubre cada detalle </a>
         </div>
     </section>
     <section className='pro'>
         <div className="projectDetective">
           <h3 className='names'> Detective Cards </h3>
           <img className='landing' src={landingDet} alt='Landing'></img>
-          <a href="https://reactives-detectives.onrender.com/" class="button-link" target="_blank" rel="noopener noreferrer" > Ver proyecto completo </a>
+          <a href="https://reactives-detectives.onrender.com/" class="button-link" target="_blank" rel="noopener noreferrer" > Emprende el recorrido </a>
         </div>
     </section>
     <section className='other'>
