@@ -1,12 +1,14 @@
 import React from 'react'
-import "../../styles/body/projects.scss"
+import "../../styles/body/projects.scss";
+import adams from "../../images/adamsCards.png";
+import detective from "../../images/detectiveCards.png";
 
 
 
 function Projects() {
 
-  const landingAdams = ['./src/images/adamsCards.PNG'];
-  const landingDet = ['./src/images/detectiveCards.PNG'];
+  const landingAdams = [adams];
+  const landingDet = [detective];
 
   return (
     <div>
