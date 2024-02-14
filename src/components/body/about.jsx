@@ -34,7 +34,7 @@ function About() {
     <section className='about'>
         <h2 className='about_title'> {titleOne} </h2>
         <h3> {subTitleOne} </h3>
-        <img className='family' src={currentImage} alt='Fotos'></img>
+        <img className='family' src={fotoDarling} alt='Fotos'></img>
         <p> {textOne} </p>
         <p> {textTwo} </p>
         <p> {textThree} </p>
