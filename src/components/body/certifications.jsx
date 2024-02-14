@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
 import "../../styles/body/certifications.scss";
+import dipA from "../../images/diploma1.png";
+import dipB from "../../images/diploma2.png";
+import dipC from "../../images/diploma3.png";
+import dipD from "../../images/diploma4.png";
 
 function Certifications() {
   const subTitleC = "Certificados";
-  const diplomas = ['./src/images/diploma1.png','./src/images/diploma2.png','./src/images/diploma3.png','./src/images/diploma4.png',
-];
+  
+  const diplomas = [dipA, dipB, dipC, dipD];
+
   const [currentDiplomaIndex, setCurrentDiplomaIndex] = useState(0);
 
   const previousDiploma = () => {
@@ -22,13 +27,13 @@ function Certifications() {
       <section className='certification'>
           <h2 className='subtitle'>{subTitleC}</h2>
           <div className="diploma-container">
-            <button onClick={previousDiploma} className='btnStyle'><i class="fa-regular fa-hand-point-left"></i></button>
+            <button onClick={previousDiploma} className='btnStyle'><i className="fa-regular fa-hand-point-left"></i></button>
             <img 
               className="diploma" 
               src={diplomas[currentDiplomaIndex]} 
               alt="Certificado Estudio"
             />
-            <button onClick={nextDiploma} className='btnStyle'><i class="fa-regular fa-hand-point-right"></i></button>
+            <button onClick={nextDiploma} className='btnStyle'><i className="fa-regular fa-hand-point-right"></i></button>
           </div>
       </section>
     </div>
@@ -36,3 +41,4 @@ function Certifications() {
 }
 
 export default Certifications;
+
